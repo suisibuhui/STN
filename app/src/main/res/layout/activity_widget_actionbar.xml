@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/sy_blue">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/ibtn_left"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_mine"
+            android:layout_alignParentLeft="true"/>
+
+        <View
+            android:id="@+id/v_red_tip"
+            android:visibility="invisible"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@id/ibtn_left"
+            android:layout_alignTop="@id/ibtn_left"
+            android:background="@drawable/shape_red_tip"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="@color/text_white"
+        android:text="首页"/>
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_white"
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="退出"
+        />
+
+</RelativeLayout>

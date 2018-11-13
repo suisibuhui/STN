@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_user_locate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/text_white">
+
+
+    <!--用户定位标题栏-->
+    <TextView
+        android:drawableLeft="@drawable/shape_gongzuotai"
+        android:drawablePadding="8dp"
+        style="@style/TextView_BuleTop"
+        android:text="用户定位"/>
+    <!--分割线-->
+    <View
+        style="@style/SplitLine"/>
+
+    <!--用户定位详情栏-->
+    <LinearLayout
+        android:id="@+id/ll_locate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/ul_fg_left"
+                    android:text="客户名称:  "
+                    />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/ul_fg_right"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/ul_fg_left"
+                    android:text="智能卡号/宽带用户名：:  "
+                    />
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/tv_user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:ellipsize="end"
+                    android:textColor="@color/ul_fg_right"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/ul_fg_left"
+                    android:text="地址名称:  "
+                    />
+
+                <TextView
+                    android:id="@+id/tv_user_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/ul_fg_right"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.13"
+            android:background="@color/text_white"
+            android:clickable="false"
+            android:src="@drawable/ic_next"/>
+
+    </LinearLayout>
+</LinearLayout>

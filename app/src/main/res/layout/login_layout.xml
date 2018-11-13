@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/background_grey">
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:text="网络成员:"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:background="@drawable/shape_edittext_frame">
+
+            <Spinner
+                android:id="@+id/sp_application_id_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:text="备注:"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            >
+            <EditText
+                android:id="@+id/et_applicationer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/shape_edittext_frame"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btn_paifa"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="派发"
+        android:layout_gravity="center_horizontal"
+        android:textSize="17sp"
+        android:textColor="@color/text_white"
+        android:background="@drawable/shape_button_blue"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

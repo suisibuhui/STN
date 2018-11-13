@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.example.stn.stn.views.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="定位结果"
+        app:leftImage="@drawable/ic_back"
+        app:rightText="重定位"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!--左侧菜单-->
+        <FrameLayout
+            android:id="@+id/fl_location_menu"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <!--主内容-->
+        <FrameLayout
+            android:id="@+id/fl_location_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

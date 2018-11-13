@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp"
+              android:orientation="horizontal"
+              android:background="@color/background_white">
+
+
+
+    <LinearLayout
+
+        android:id="@+id/ll_productorder"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+
+
+            android:layout_gravity="top"
+            android:id="@+id/cb_productorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/tv_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_black"
+                    android:text="宽带产品（建设费0元）"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:id="@+id/tv_product_time"
+                    android:textColor="@color/text_grey_01"
+                    android:text="2015-15-01  至 2050-12-01"/>
+
+
+                <LinearLayout
+                    android:id="@+id/lv_next"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="20dp">
+                    <Button
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:background="@drawable/shape_button_blue"
+                        android:id="@+id/rv_product_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textColor="@color/text_white"
+                        android:text="修改失效时间"/>
+                    <ImageView
+                       android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_next"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

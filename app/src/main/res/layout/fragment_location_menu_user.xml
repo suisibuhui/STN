@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#060739">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/text_white"
+        android:text="客户名称"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#9696AA"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:id="@+id/tv_location_customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/text_white"
+            android:text="胡歌"/>
+
+        <TextView
+            android:id="@+id/tv_location_customer_stdAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="5dp"
+            android:text="胡歌"/>
+    </LinearLayout>
+
+
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/lv_location_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+
+        <TextView
+            style="@style/TextView_BuleTop"
+            android:id="@+id/tv_title"
+            android:drawableLeft="@drawable/shape_gongzuotai"
+            android:text="快捷工作台"
+            android:drawablePadding="8dp"
+            />
+
+
+    </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        style="@style/SplitLine"/>
+
+    <GridView
+        android:id="@+id/gv_content_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="3dp">
+    </GridView>
+</LinearLayout>

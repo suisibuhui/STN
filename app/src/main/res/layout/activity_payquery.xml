@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/background_grey">
+
+    <com.example.stn.stn.views.TopBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="缴费信息"
+        app:leftImage="@drawable/ic_back"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--用户定位-->
+            <FrameLayout
+                android:id="@+id/fl_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_BuleTop2"
+                    android:text="查询条件"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp">
+
+                <include
+                    android:id="@+id/query_criteria"
+                    layout="@layout/item_include_billinfo"/>
+            </LinearLayout>
+
+
+            <Button
+
+                android:id="@+id/btn_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:background="@drawable/shape_button_blue"
+                android:textSize="18sp"
+                android:textColor="@color/text_white"
+                android:text="查询"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
